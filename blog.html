@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+SC"
+    />
+
+    <title>Recipes</title>
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-fluid pl-4">
+      <div class="container-fluid ml-2">
+        <div class="row">
+          <div class="col">
+            <h1>Meal Planner</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-light navbar-expand-sm sticky-top">
+      <div class="container-fluid">
+        <!---fluid ml-2-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mealplannerNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mealplannerNavbar">
+          <ul class="navbar-nav text-dark">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Mealplan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Your Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mx-auto page-title text-center mt-3 mb-5">
+      <h2>Blog</h2>
+    </div>
+
+    <div class="container-fluid blog-container">
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <div class="row form-group post-creator-row p-3">
+              <div class="col-4 p-0">
+                <select class="form-control" name="postType">
+                  <option>Post Type</option>
+                  <option>Question</option>
+                  <option>Advice</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-4 ml-auto p-0">
+                <button type="submit" class="btn btn-outline-dark float-right">
+                  Post
+                </button>
+              </div>
+              <div class="col-12 p-0">
+                <textarea
+                  id="post-textbox"
+                  name="postTextbox"
+                  placeholder="type post here"
+                  class="p-2"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--form col-->
+
+        <div class="col-12">
+          <div class="row post-row pt-2">
+            <div class="col-12">
+              <h4>Post Creator</h4>
+            </div>
+            <div class="col-12 post-contents">
+              <p>post contents here....</p>
+            </div>
+            <div class="col-12 mt-5">
+              <!--<h5 id="post-header-line"></h5>-->
+              <div id="post-header-line"></div>
+            </div>
+            <div class="col-6 text-center post-buttons">
+              <a role="button" href="#" class="post-buttons">Like</a>
+            </div>
+            <div class="col-6 text-center">
+              <a role="button" href="#" class="post-buttons">Comment</a>
+            </div>
+          </div>
+          <!--post row-->
+        </div>
+        <!--post col-->
+      </div>
+    </div>
+    <!--container-->
+
+    <footer class="site-footer pt-3 mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-sm-3 text-center">
+            <h5>Check Us Out</h5>
+            <ul class="list-unstyled">
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+
+          <div class="col-6 text-center d-none d-sm-block">
+            <h3>Meal Planner</h3>
+          </div>
+
+          <div class="col col-sm-3 text-center">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><a>email@gmail.com</a></li>
+              <li><a>310-xxx-xxx</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
