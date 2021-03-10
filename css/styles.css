@@ -1,0 +1,68 @@
+.jumbotron {
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+  min-height: 50px;
+}
+
+.jumbotron h1 {
+  font-family: "Alegreya Sans";
+}
+
+.navbar {
+  background-color: rgb(248, 175, 248);
+}
+
+.nav-link {
+  color: black;
+}
+
+.main-card {
+  text-align: center;
+  border: none;
+}
+
+.site-footer {
+  background-color: black;
+  color: white;
+}
+.card-header-top {
+  min-height: 90px;
+  background-color: white;
+  border: none;
+  padding-bottom: 0;
+}
+.recipe-butt {
+  padding: 5px;
+  min-width: 100px;
+}
+
+.recipe-butt-container {
+  max-width: 630px;
+}
+.recipe-container {
+  /*max-width: 95%;*/
+}
+
+.recipe-card {
+  max-width: 300px;
+}
+
+.recipe-img {
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+}
+
+.recipe-card-header {
+  padding: 0;
+  max-height: 150px;
+}
+
+body {
+  font-family: "Alegreya SC";
+}
+
+#buildCommunityHeader {
+  font-weight: 900;
+}

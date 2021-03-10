@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+SC"
+    />
+
+    <title>Recipes</title>
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-fluid pl-4">
+      <div class="container-fluid ml-2">
+        <div class="row">
+          <div class="col">
+            <h1>Meal Planner</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-light navbar-expand-sm sticky-top">
+      <div class="container-fluid">
+        <!---fluid ml-2-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mealplannerNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mealplannerNavbar">
+          <ul class="navbar-nav text-dark">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mealplan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Your Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class='text-center mt-3 '>
+        <h2>Recipes: All Recipes</h2>
+    </div>
+
+    <div class='container-fluid recipe-butt-container mx-auto mt-3'>
+        <div class='row '>
+            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >All Recipes</button></div>
+            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Breakfast</button></div>
+            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Lunch/Dinner</button></div>
+            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Snacks</button></div>
+            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Drinks</button></div>
+            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Add Recipe</button></div>
+        </div>
+    </div>
+    </div><!--container-->
+
+    <div class='container-fluid p-5  recipe-container'>
+        <div class='row ' >
+            
+                <div class='col-4 '>
+                    <div class='card recipe-card mx-auto'>
+                        <!--<div class='card-header '></div>-->
+                        <img class='recipe-img' src='img/food1.jpg'>
+                        <div class='card-body'>
+                            <h5>Recipe 1</h5>
+                            <p>There will be a brief description here</p>
+                        </div>
+                        <!--<div class='card-footer'>
+                            <p>Created by: madison</p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class='col-4'>
+                    <div class='card recipe-card mx-auto'>
+                        <!--<div class='card-header '></div>-->
+                        <img class='card-img-top recipe-img' src='img/food2.jpg'>
+                        <div class='card-body'>
+                            <h5>Recipe 1</h5>
+                            <p>There will be a brief description here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-4'>
+                    <div class='card recipe-card mx-auto'>
+                        <!--<div class='card-header '></div>-->
+                        <img class='card-img-top recipe-img' src='img/food4.jpg'>
+                        <div class='card-body'>
+                            <h5>Recipe 1</h5>
+                            <p>There will be a brief description here</p>
+                        </div>
+                    </div>
+                </div>
+        
+        </div><!--row-->
+    </div><!--container-->
+
+
+
+    <footer class="site-footer pt-3 mt-4">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col col-sm-3 text-center">
+            <h5>Check Us Out</h5>
+            <ul class="list-unstyled">
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+
+          <div class="col-6 text-center d-none d-sm-block">
+            <h3>Meal Planner</h3>
+          </div>
+
+          <div class="col col-sm-3 text-center">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><a>email@gmail.com</a></li>
+              <li><a>310-xxx-xxx</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
