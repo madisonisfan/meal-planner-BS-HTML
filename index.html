@@ -57,7 +57,9 @@
             <li class="nav-item">
               <a class="nav-link" href="recipes.html">Recipes</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Mealplan</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="mealplan.html">Mealplan</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blog</a>
             </li>
@@ -67,15 +69,15 @@
       </div>
     </nav>
 
-    <div class="container-fluid mt-4 mr-2 ml-2">
+    <div class="container-fluid mt-4 mt-md-6 pt-md-4 mr-2 ml-2">
       <div class="row">
         <div class="card-group">
           <div class="col-12 col-md-4">
             <div class="card main-card">
-              <div class="card-header card-header-top">
+              <div class="card-header card-header-top min">
                 <h3>Preferences & Sensitivities</h3>
               </div>
-              <div class="card-body pt-0">
+              <div class="card-body pt-0 mt-lg-0">
                 <p>
                   Don't worry if you're a picky eater or have a very sensitive
                   stomach, there will still be plenty of options for you. On
@@ -89,7 +91,7 @@
               <div class="card-header card-header-top">
                 <h3 class="align-middle">Add Recipes</h3>
               </div>
-              <div class="card-body pt-0">
+              <div class="card-body pt-0 mt-lg-0">
                 <p>
                   Any user can contribute to our lists of recipes. You can do
                   this by uploading a recipe or filling out the form provided.
@@ -102,9 +104,9 @@
           <div class="col-12 col-md-4">
             <div class="card main-card">
               <div class="card-header card-header-top">
-                <h3>Customizable Meal Plan</h3>
+                <h3>Customizable Mealplan</h3>
               </div>
-              <div class="card-body pt-0">
+              <div class="card-body pt-0 mt-lg-0">
                 <p>
                   You will be able to plan your meals for each meal type, for
                   the entire week. This will keep you organized and motivated.
@@ -120,7 +122,9 @@
           <div class="col-12 col-md-4">
             <div class="card main-card">
               <div class="card-body">
-                <h3>Post</h3>
+                <div class="card-header card-header-bottom">
+                  <h3>Post</h3>
+                </div>
                 <p>
                   In the blog section, you are able to create posts. These posts
                   could be questions, advice, random thoughts, or really just
@@ -133,7 +137,10 @@
           <div class="col-12 col-md-4">
             <div class="card main-card">
               <div class="card-body">
-                <h3>Message</h3>
+                <div class="card-header card-header-bottom">
+                  <h3>Message</h3>
+                </div>
+
                 <p>
                   You can message any user you want. Maybe you have questions
                   about something or just want to chat and connect.
@@ -145,7 +152,9 @@
           <div class="col-12 col-md-4">
             <div class="card main-card">
               <div class="card-body">
-                <h3>Follow</h3>
+                <div class="card-header card-header-bottom">
+                  <h3>Follow</h3>
+                </div>
                 <p>
                   If you find a user you really enjoy, you can toss them a
                   follow. to view posts only from those you follow, head on over
@@ -156,7 +165,12 @@
           </div>
 
           <div class="col-12 mx-auto text-center">
-            <button type="button" class="btn btn-outline-dark">
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#signupModal"
+              class="btn btn-outline-dark"
+            >
               Get Started
             </button>
           </div>
@@ -165,6 +179,98 @@
       <!--row-->
     </div>
     <!--container-->
+
+    <div id="signupModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Sign Up</h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="row form-group">
+                  <label for="firstName" class="col-3 col-form-label"
+                    >First Name</label
+                  >
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label for="lastName" class="col-form-label col-3"
+                    >Last Name</label
+                  >
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="lastName"
+                      id="lastName"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label for="userName" class="col-form-label col-3"
+                    >Username</label
+                  >
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="userName"
+                      id="userName"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label for="email" class="col-form-label col-3">Email</label>
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      id="email"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label for="Password" class="col-form-label col-3"
+                    >Password</label
+                  >
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="password"
+                      name="password"
+                      id="password"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <a
+                    role="button"
+                    class="btn btn-outline-dark"
+                    href="recipes.html"
+                    >Done</a
+                  >
+                </div>
+                <!--<button type="submit">Submit Recipe</button>-->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal-->
 
     <footer class="site-footer pt-3 mt-4">
       <div class="container-fluid">

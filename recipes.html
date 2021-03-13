@@ -50,11 +50,11 @@
 
         <div class="collapse navbar-collapse" id="mealplannerNavbar">
           <ul class="navbar-nav text-dark">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link text-dark" href="index.html">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Mealplan</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="mealplan.html">Mealplan</a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Your Page</a></li>
           </ul>
@@ -62,32 +62,56 @@
       </div>
     </nav>
 
-    <div class='text-center mt-3 '>
-        <h2>Recipes: All Recipes</h2>
+    <div class="mx-auto page-title text-center mt-3 mb-5" style="width: 350px">
+      <h2>Recipes: All Meals</h2>
     </div>
 
-    <div class='container-fluid recipe-butt-container mx-auto mt-3'>
+    <div class='container-fluid recipe-butt-container mr-5 ml-5 mx-md-auto mt-3 d-none d-md-block'>
         <div class='row '>
-            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >All Recipes</button></div>
-            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Breakfast</button></div>
-            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Lunch/Dinner</button></div>
-            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Snacks</button></div>
-            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Drinks</button></div>
-            <div class='col-2'><button class='btn btn-sm btn-outline-dark recipe-butt' >Add Recipe</button></div>
+            <div class='col-2 text-center mb-2 mb-md-0'><button class='btn btn-sm btn-outline-dark recipe-butt' >All Recipes</button></div>
+            <div class='col-4 col-md-2 text-center'><button class='btn btn-sm btn-outline-dark recipe-butt' >Breakfast</button></div>
+            <div class='col-4 col-md-2 text-center'><button class='btn btn-sm btn-outline-dark recipe-butt' >Lunch/Dinner</button></div>
+          
+            <div class='col-4 col-md-2 text-center'><button class='btn btn-sm btn-outline-dark recipe-butt' >Snacks</button></div>
+            <div class='col-4 col-md-2 text-center'><button class='btn btn-sm btn-outline-dark recipe-butt' >Drinks</button></div>
+            <div class='col-4 col-md-2 text-center'><a role='button' class='btn btn-sm btn-outline-dark recipe-butt' href='addrecipe.html'>Add Recipe</a>
+             <!-- <button class='btn btn-sm btn-outline-dark recipe-butt' >Add Recipe</button>--></div>
         </div>
     </div>
     </div><!--container-->
+    
+    <div class='container mt-3 d-block d-md-none select-mealtype-container' id='select-mealtype-container'>
+        <form>
+          <div class='row form-group'>
+          <div class='col'>
+            <select id='recipe-butt' name='recipe-butt' class='form-control'>
+              <option>All Meals</option>
+              <option>Breakfast</option>
+              <option>Lunch/Dinner</option>
+              <option>Drinks</option>
+              <option>Snacks</option>
+            </select>
+          </div>
+          <div class='col-1 text-center p-0'>
+            <button class='btn btn-sm btn-outline-dark ' type='submit'>Go! </button>
+          </div>
+        </div>
+        </form>
+      
+      <div class='col-12 text-center'><a role='button' class='btn btn-sm btn-outline-dark recipe-butt' href='addrecipe.html'>Add Recipe</a>
+        <!-- <button class='btn btn-sm btn-outline-dark recipe-butt' >Add Recipe</button>--></div>
+    </div><!--container-->
 
-    <div class='container-fluid p-5  recipe-container'>
+    <div class='container-fluid p-5  d-none d-md-block recipe-container'>
         <div class='row ' >
-            
                 <div class='col-4 '>
                     <div class='card recipe-card mx-auto'>
                         <!--<div class='card-header '></div>-->
                         <img class='recipe-img' src='img/food1.jpg'>
-                        <div class='card-body'>
-                            <h5>Recipe 1</h5>
+                        <div class='card-body pb-1'>
+                          <a href='#' class='text-dark'><h5>Recipe 1</h5></a>
                             <p>There will be a brief description here</p>
+                            <a href='#' class='favorite-butt' role='button'><i class="fa fa-star"></i>  Favorite</a>
                         </div>
                         <!--<div class='card-footer'>
                             <p>Created by: madison</p>
@@ -99,9 +123,10 @@
                     <div class='card recipe-card mx-auto'>
                         <!--<div class='card-header '></div>-->
                         <img class='card-img-top recipe-img' src='img/food2.jpg'>
-                        <div class='card-body'>
-                            <h5>Recipe 1</h5>
+                        <div class='card-body pb-1'>
+                          <a href='#' class='text-dark'><h5>Recipe 2</h5></a>
                             <p>There will be a brief description here</p>
+                            <a href='#' class='favorite-butt' role='button'><i class="fa fa-star"></i>  Favorite</a>
                         </div>
                     </div>
                 </div>
@@ -110,9 +135,10 @@
                     <div class='card recipe-card mx-auto'>
                         <!--<div class='card-header '></div>-->
                         <img class='card-img-top recipe-img' src='img/food4.jpg'>
-                        <div class='card-body'>
-                            <h5>Recipe 1</h5>
+                        <div class='card-body pb-1 '>
+                          <a href='#' class='text-dark'><h5>Recipe 3</h5></a>
                             <p>There will be a brief description here</p>
+                            <a href='#' class='favorite-butt' role='button'><i class="fa fa-star"></i>  Favorite</a>
                         </div>
                     </div>
                 </div>
@@ -120,6 +146,40 @@
         </div><!--row-->
     </div><!--container-->
 
+    <div class=' recipe-container-sm  mx-auto d-block d-md-none'>
+      <div class='row'>
+        <div class='col-12 recipe-box-sm mt-4 pl-0'>
+          <div class='media'>
+            <img class='d-flex recipe-img-sm mr-3' src='img/food1.jpg' >
+            <div class='media-body mt-2'>
+              <a href='#' class='text-dark'><h5>Recipe 1</h5></a>
+              <p>There will be a brief description here</p>
+              <a href='#' class='favorite-butt' role='button'><i class="fa fa-star"></i>  Favorite</a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 recipe-box-sm mt-4 pl-0'>
+          <div class='media'>
+            <img class='d-flex recipe-img-sm mr-3' src='img/food2.jpg' >
+            <div class='media-body mt-2'>
+              <a href='#' class='text-dark'><h5>Recipe 2</h5></a>
+              <p>There will be a brief description here</p>
+              <a href='#' class='favorite-butt' role='button'><i class="fa fa-star"></i>  Favorite</a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 recipe-box-sm mt-4 pl-0'>
+          <div class='media'>
+            <img class='d-flex recipe-img-sm mr-3' src='img/food4.jpg' >
+            <div class='media-body mt-2'>
+              <a href='#' class='text-dark'><h5>Recipe 3</h5></a>
+              <p>There will be a brief description here</p>
+              <a href='#' class='favorite-butt' role='button'><i class="fa fa-star"></i>  Favorite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--container-->
 
 
     <footer class="site-footer pt-3 mt-4">

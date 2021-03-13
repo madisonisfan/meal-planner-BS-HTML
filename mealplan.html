@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+SC"
+    />
+
+    <title>Recipes</title>
+  </head>
+  <body>
+    <header class="jumbotron jumbotron-fluid pl-4">
+      <div class="container-fluid ml-2">
+        <div class="row">
+          <div class="col">
+            <h1>Meal Planner</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-light navbar-expand-sm sticky-top">
+      <div class="container-fluid">
+        <!---fluid ml-2-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mealplannerNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mealplannerNavbar">
+          <ul class="navbar-nav text-dark">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Mealplan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Your Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mx-auto page-title text-center mt-3 mb-5" style='width: 250px; '>
+      <h2>Meal Plan</h2>
+    </div>
+
+    <div class="container-fluid mx-auto d-none d-lg-block">
+      <div class="row">
+        <div class="col-11 mx-auto">
+          <div class="table-responsive">
+            <table class="table text-center table-bordered">
+              <thead>
+                <tr>
+                  <td style="border: none"></td>
+                  <th>Breakfast</th>
+                  <th>Lunch</th>
+                  <th>Dinner</th>
+                  <th>Snacks</th>
+                  <th>Drinks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Sunday</th>
+                  <td>
+                    <a class="mealplan-recipe" href="#">Chicken Salad</a
+                    ></br><a class="edit-recipe-butt " href="#">Edit Recipe</a>
+                  </td>
+                  <td><a href="#">+ Add Recipe</a></td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>Monday</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>Tuesday</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>Wednesday</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>Thursday</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>Friday</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>Saturday</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--container-->
+
+    <div class='container mx-auto mealplan-container-sm d-block d-lg-none'>
+      <div class='row'>
+        <div class='col-12'><h5>Saturday</h3></div>
+          <div class='col-12 '>
+            <ul class='nav nav-tabs '>
+              <li class='nav-item tab'><a class='nav-link  href='#saturday-breakfast' role='tab' data-toggle="tab">Breakfast</a></li>
+              <li class='nav-item tab'><a class='nav-link'   href='#saturday-lunch' role='tab' data-toggle="tab">Lunch</a></li>
+              <li class='nav-item tab'><a class='nav-link' href='#saturday-dinner' role='tab' data-toggle="tab">Dinner</a></li>
+              <li class='nav-item tab'><a class='nav-link' href='#saturday-snacks' role='tab' data-toggle="tab">Snacks</a></li>
+              <li class='nav-item tab'><a class='nav-link' href='#saturday-drinks' role='tab' data-toggle="tab">Drinks</a></li>
+            
+            </ul>
+            <div class='tab-content'>
+              <div role='tabpanel' class='tab-pane fade show active' id='saturday-breakfast'><div class='media'>
+                <img class='d-flex mealplan-recipe-img mr-3 ' src='img/food4.jpg' >
+                <div class='media-body mt-2'>
+                  <a href='#' class='text-dark'><h5>Recipe 1</h5></a>
+                  <p>There will be a brief description here</p>
+                </div>
+              </div></div>
+              <div role='tabpanel' class='tab-pane fade show ' id='saturday-lunch'><div class='media'>
+                <img class='d-flex mealplan-recipe-img mr-3 ' src='img/food2.jpg' >
+                <div class='media-body mt-2'>
+                  <a href='#' class='text-dark'><h5>Recipe </h5></a>
+                  <p>There will be a brief description here</p>
+                </div>
+              </div></div>
+              <div role='tabpanel' class='tab-pane fade show ' id='saturday-dinner'>recope 1</div>
+              <div role='tabpanel' class='tab-pane fade show ' id='saturday-snacks'>recope 1</div>
+              <div role='tabpanel' class='tab-pane fade show ' id='saturday-drinks'>recope 1</div>
+            </div>
+          </div>
+
+          <div class='col-12 mt-4'><h5>Monday</h3></div>
+            <div class='col-12 '>
+              <ul class='nav nav-tabs '>
+                <li class='nav-item tab'><a class='nav-link' href='#monday-breakfast' role='tab' data-toggle="tab">Breakfast</a></li>
+                <li class='nav-item tab'><a class='nav-link' href='#monday-lunch' role='tab' data-toggle="tab">Lunch</a></li>
+                <li class='nav-item tab'><a class='nav-link' href='#monday-dinner' role='tab' data-toggle="tab">Dinner</a></li>
+                <li class='nav-item tab'><a class='nav-link' href='#monday-snacks' role='tab' data-toggle="tab">Snacks</a></li>
+                <li class='nav-item tab'><a class='nav-link' href='#monday-drinks' role='tab' data-toggle="tab">Drinks</a></li>
+              
+              </ul>
+              <div class='tab-content'>
+                <div role='tabpanel' class='tab-pane fade show active' id='monday-breakfast'><div class='media'>
+                  <img class='d-flex mealplan-recipe-img mr-3 ' src='img/food4.jpg' >
+                  <div class='media-body mt-2'>
+                    <a href='#' class='text-dark'><h5>Recipe 1</h5></a>
+                    <p>There will be a brief description here</p>
+                  </div>
+                </div></div>
+                <div role='tabpanel' class='tab-pane fade show ' id='monday-lunch'><div class='media'>
+                  <img class='d-flex mealplan-recipe-img mr-3 ' src='img/food2.jpg' >
+                  <div class='media-body mt-2'>
+                    <a href='#' class='text-dark'><h5>Recipe </h5></a>
+                    <p>There will be a brief description here</p>
+                  </div>
+                </div></div>
+                <div role='tabpanel' class='tab-pane fade show ' id='monday-dinner'>recope 1</div>
+                <div role='tabpanel' class='tab-pane fade show ' id='monday-snacks'>recope 1</div>
+                <div role='tabpanel' class='tab-pane fade show ' id='monday-drinks'>recope 1</div>
+              </div>
+            </div>
+
+      </div>
+    </div><!--container-->
+
+    <footer class="site-footer pt-3 mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-sm-3 text-center">
+            <h5>Check Us Out</h5>
+            <ul class="list-unstyled">
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+
+          <div class="col-6 text-center d-none d-sm-block">
+            <h3>Meal Planner</h3>
+          </div>
+
+          <div class="col col-sm-3 text-center">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><a>email@gmail.com</a></li>
+              <li><a>310-xxx-xxx</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
