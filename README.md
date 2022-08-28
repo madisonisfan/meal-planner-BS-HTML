@@ -15,3 +15,13 @@ Nothing is functional, only the design and navbar are implemented
 - Boostrap
 - jQuery 
 - Popper.js
+
+## Installation
+
+In the project directory, you can run:
+
+Install Dependencies: 
+`npm install` 
+
+To run: 
+`npm start`
