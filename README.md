@@ -24,9 +24,10 @@ Nothing is functional, only the design and navbar are implemented
 
 
 ## Screenshots
+<img src="https://user-images.githubusercontent.com/69568402/187095590-4617be99-d77b-4cbd-a67a-90362662bf45.png" width="400" height="auto" />
 
 
-<img src="https://user-images.githubusercontent.com/69568402/187094655-033bff75-0627-4ebd-b2f4-51cac8ed2e94.png" width="500" height="auto"  />
+<img src="https://user-images.githubusercontent.com/69568402/187094655-033bff75-0627-4ebd-b2f4-51cac8ed2e94.png" width="400" height="auto"  />
 
 
 ## Installation
