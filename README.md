@@ -5,7 +5,7 @@ In 2021 I participated in Nucamp's Full-Stack Bootcamp. In the first phase, we r
 ## Table Of Contents
 - [Features](#features)
 - [Technology](#technology)
-- [Installation](#installation)
+- [Installation And Usage](#installation-and-usage)
 - [Screenshots](#screenshots)
 
 
@@ -24,7 +24,7 @@ Nothing is functional, only the design and navbar are implemented
 - Popper.js
 
 
-## Installation
+## Installation And Usage
 
 In the project directory, you can run:
 
