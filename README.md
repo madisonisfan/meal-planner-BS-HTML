@@ -5,8 +5,9 @@ In 2021 I participated in Nucamp's Full-Stack Bootcamp. In the first phase, we r
 ## Table Of Contents
 - [Features](#features)
 - [Technology](#technology)
-- [Screenshots](#screenshots)
 - [Installation](#installation)
+- [Screenshots](#screenshots)
+
 
 ## Features
 Nothing is functional, only the design and navbar are implemented 
@@ -23,13 +24,6 @@ Nothing is functional, only the design and navbar are implemented
 - Popper.js
 
 
-## Screenshots
-<img src="https://user-images.githubusercontent.com/69568402/187095590-4617be99-d77b-4cbd-a67a-90362662bf45.png" width="400" height="auto" />
-
-<img src="https://user-images.githubusercontent.com/69568402/187095635-4d47455e-4106-4e4d-a499-a92fd52e0253.png"  width="400" height="auto" />
-
-
-
 ## Installation
 
 In the project directory, you can run:
@@ -40,3 +34,8 @@ Install Dependencies:
 To run: 
 `npm start`
 
+
+## Screenshots
+<img src="https://user-images.githubusercontent.com/69568402/187095590-4617be99-d77b-4cbd-a67a-90362662bf45.png" width="400" height="auto" />
+
+<img src="https://user-images.githubusercontent.com/69568402/187095635-4d47455e-4106-4e4d-a499-a92fd52e0253.png"  width="400" height="auto" />
